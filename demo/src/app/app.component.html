@@ -1,0 +1,19 @@
+<div class="container">
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+            <li>
+                <a routerLink="list" queryParamsHandling="preserve">List</a>
+            </li>
+            <li>
+                <a routerLink="create">Create</a>
+            </li>
+            
+        </ul>
+    </nav>
+    <router-outlet>
+    </router-outlet>
+    <!-- Bind to showLoadingIndicator property in the component class -->
+    <div *ngIf="showLoadingIndicator" class="spinner"></div>
+</div>
+
+
